@@ -12,6 +12,16 @@
         <div class="middle">
             <div id="nav"></div>
             <h2>Home</h2>
+            Building a filter is done on the filter tab by pressing the compile button. <br>
+            This button saves and builds the selected filter from the text area and uses the name in the name field. <br><br>
+            The process of building a filter replaces tags inside {} with the content of the replacement with that name.<br>
+            This is a recursive process where replacements can also have replacements. I'm not protecting against recursion depth so if it falls over, that's on you.<br><br>
+            <h2>Replacements</h2>
+            <span>Replace Format: {replace file name,option 1,...,option N}</span><br>
+            <span>{currency,5}</span><br>
+            <span>{talisman}</span><br><br>
+            <span>Parameter Format: [n] (1 indexed)</span><br>
+            <span>[1]</span><br>
         </div>
     </body>
 </html>
