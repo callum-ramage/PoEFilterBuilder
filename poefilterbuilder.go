@@ -163,6 +163,8 @@ func localSubmitFilterHandler(w http.ResponseWriter, r *http.Request) {
 	case "compile":
 		filters.SaveFilter(fileName, fileContent)
 		filters.CompileFilter(fileName)
+	case "compileall":
+		filters.CompileAll()
 	}
 
 	localFilterHandler(w, r)

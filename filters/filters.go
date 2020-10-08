@@ -83,3 +83,10 @@ func CompileFilter(name string) {
 		}
 	}
 }
+
+// CompileAll builds every filter you have
+func CompileAll() {
+	for key := range Filters {
+		CompileFilter(key)
+	}
+}
