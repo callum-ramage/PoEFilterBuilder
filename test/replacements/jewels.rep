@@ -1,0 +1,41 @@
+[1]#############################
+[1]##          Jewels          ##
+[1]##############################
+[1]
+[1]#Legion Jewel
+[1]Show
+[1]  BaseType "Timeless"
+[1]  SetBorderColor 255 218 11 255
+[1]  MinimapIcon 0 Yellow Circle
+[1]  SetFontSize 45
+[1]
+[1]#Cluster
+[1]Show
+[1]  AnyEnchantment True
+[1]  Class Jewel
+[1]  SetBorderColor 22 247 108 255
+[1]  MinimapIcon 0 Blue Diamond
+[1]  SetFontSize 45
+[1]
+[1]Show
+[1]  Class "Abyss Jewel"
+[1]  SetTextColor 210 100 220
+[1]  SetBackgroundColor 50 50 50
+[1]  SetBorderColor 255 238 0 255
+[1]  MinimapIcon 2 Yellow Square
+[1]
+[1]Show
+[1]  Class Jewel
+[1]#  Rarity Rare
+[1]  SetTextColor 240 0 0
+[1]  SetBackgroundColor 200 200 200
+[1]  SetBorderColor 255 238 0 255
+[1]  MinimapIcon 2 Yellow Square
+[1]
+[1]#Show
+[1]#  Class Jewel
+[1]#  Rarity < Rare
+[1]#  SetTextColor 240 0 0
+[1]#  SetBackgroundColor 200 200 200
+[1]#  SetBorderColor 0 0 255 255
+[1]#  MinimapIcon 2 Blue Square

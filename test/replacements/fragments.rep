@@ -1,0 +1,8 @@
+[1]#############################
+[1]##        Fragments         ##
+[1]##############################
+[1]Show
+[1]  Class "Map Fragments" "Misc Map Items" "Atlas Region Upgrade Item"
+[1]  SetFontSize 45
+[1]  SetBorderColor 102 0 102
+[1]  SetTextColor 22 247 212

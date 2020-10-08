@@ -1,0 +1,84 @@
+[1]#############################
+[1]##         Currency         ##
+[1]##############################
+[1]
+[1]Show
+[1]  BaseType "Exalted Orb" "Mirror of Kalandra" "Divine Orb" "Eternal Orb" "Orb of Annulment" "Timeworn Reliquary Key" "Prime Chaotic Resonator" "Prime Alchemical Resonator"
+[1]  PlayAlertSound 6 300
+[1]  MinimapIcon 0 White Hexagon
+[1]  PlayEffect White
+[1]  SetFontSize 45
+[1]  SetTextColor 84 18 42
+[1]  SetBackgroundColor 136 136 255 240
+[1]  SetBorderColor 255	255	255
+[1]
+[1]Show
+[1]  BaseType "Chaos Orb" "Regal Orb" "Vaal Orb" "Orb of Regret" "Gemcutter's Prism" "Resonator" "Sextant" "Delirium Orb"
+[1]  PlayAlertSound 6 300
+[1]  MinimapIcon 1 Red Circle
+[1]  SetFontSize 45
+[1]  SetTextColor 184 218 242
+[1]  SetBackgroundColor 70 70 255 70
+[1]  SetBorderColor 184 218 242 150
+[1]
+[1]Show
+[1]  BaseType "Orb of Alteration" "Cartographer's Chisel" "Orb of Fusing"
+[1]  SetFontSize 45
+[1]  SetTextColor 184 218 242
+[1]  SetBackgroundColor 70 70 255 70
+[1]  MinimapIcon 2 Blue Circle
+[1]  #SetBorderColor 184 218 242
+[1]
+[2]Show
+[2]  BaseType "Orb of Chance"
+[2]  SetFontSize 45
+[2]  SetTextColor 184 218 242
+[2]  SetBackgroundColor 70 70 255 70
+[2]  MinimapIcon 2 Blue Circle
+[2]  AreaLevel < 75
+[2]  #SetBorderColor 184 218 242
+[1]
+[1]Show
+[1]  BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Silver Coin" "Orb of Chance" "Jeweller's Orb" "Clear Oil" "Sepia Oil"
+[1]  SetTextColor 170 158 130 200
+[1]  SetBackgroundColor 250 250 250 10
+[1]  SetBorderColor 170 158 130 150
+[1]  AreaLevel < 68
+[1]  MinimapIcon 0 Brown Circle
+[1]  SetFontSize 45
+[1]
+[1]Show
+[1]  BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Silver Coin" "Orb of Chance" "Jeweller's Orb" "Clear Oil" "Sepia Oil" "Chromatic Orb"
+[1]  SetTextColor 170 158 130 200
+[1]  SetBackgroundColor 250 250 250 10
+[1]  SetBorderColor 170 158 130 150
+[1]  SetFontSize 45
+[1]
+[1]Show
+[1]  Class Currency "Stackable Currency"
+[1]  SetFontSize 45
+[1]  SetTextColor 184 218 242
+[1]  SetBackgroundColor 70 70 255 70
+[1]  MinimapIcon 1 Blue Circle
+[1]  PlayEffect Blue
+[1]  #SetBorderColor 184 218 242
+[1]
+[3]Hide
+[3]  StackSize = 1
+[3]  BaseType "Chromatic Orb" "Jeweller's Orb" "Chromatic Orb" "Blessed Orb" "Scroll of Wisdom" "Armourer's Scrap"
+[1]
+[1]Hide
+[1]  BaseType "Binding Shard" "Alchemy Shard" "Transmutation Shard" "Whispering Essence" "Muttering Essence" "Weeping Essence"
+[1]  AreaLevel > 68
+[1]
+[1]Hide
+[1]  StackSize < 5
+[1]  BaseType "Chaos Shard" "Regal Shard" "Horizon Shard"
+[1]
+[1]Hide
+[1]  StackSize < 10
+[1]  BaseType "Alteration Shard"
+[1]
+[1]Hide
+[1]  StackSize < 20
+[1]  BaseType "Perandus Coin"

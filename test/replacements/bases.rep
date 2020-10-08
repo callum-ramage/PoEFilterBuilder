@@ -1,0 +1,45 @@
+[1]#############################
+[1]##          Bases           ##
+[1]##############################
+[1]
+[1]#Show
+[1]#  BaseType "Coral Ring" "Opal Sceptre" "Void Sceptre" "Archon Kite Shield" "Jade Amulet"
+[1]  # "Wands" "Sceptres" "Daggers"
+[1]#  SetBackgroundColor 185 8 17 80
+[1]#  SetBorderColor 185 8 17
+[1]
+[1]Show
+[1]  HasInfluence Shaper Elder Warlord Hunter Redeemer Crusader
+[1]  SetBorderColor 22 247 212
+[1]  MinimapIcon 2 Blue Square
+[1]  SetFontSize 45
+[1]
+[1]Show
+[1]  FracturedItem True
+[1]  SetFontSize 40
+[1]  SetBorderColor 38 0 86
+[1]  SetTextColor 38 0 86
+[1]  SetBackgroundColor 210 0 220
+[1]  MinimapIcon 2 White Square
+[1]  
+[1]Show
+[1]  SynthesisedItem True
+[1]  SetFontSize 45
+[1]  SetTextColor 210 0 220
+[1]  SetBorderColor 210 0 220
+[1]  SetBackgroundColor 38 0 86
+[1]  MinimapIcon 1 White Square
+[1]
+[1]Show
+[1]  Class "Fishing Rods"
+[1]  SetBorderColor 184 218 242
+[1]  SetFontSize 45
+[1]
+[1]##############################
+[1]##        Atlas Base        ##
+[1]##############################
+[1]
+[1]Show
+[1]  BaseType "Crystal Belt" "Opal Ring" "Stygian Vise" "Vermillion Ring"
+[1]  SetFontSize 45
+[1]  SetBorderColor 255 255 119

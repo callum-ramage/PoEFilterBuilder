@@ -1,0 +1,11 @@
+[1]#############################
+[1]##          Heist           ##
+[1]##############################
+[1]
+[1]Show
+[1]  Class Contract Blueprint Trinket "Heist Gear" "Heist Brooch" "Heist Cloak" "Heist Tool" "Heist Target"
+[1]  SetBorderColor 255 218 11 255
+[1]  MinimapIcon 0 Red Circle
+[1]
+[1]Hide
+[1]  BaseType "Rogue's Marker"

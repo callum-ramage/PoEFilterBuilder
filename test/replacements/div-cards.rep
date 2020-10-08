@@ -1,0 +1,45 @@
+[1]#############################
+[1]##          Bases           ##
+[1]##############################
+[1]
+[1]Show
+[1]  Class "Divination Card"
+[1]  BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Professor" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Undaunted" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "Wealth and Power"
+[1]  PlayAlertSound 6 300
+[1]  MinimapIcon 0 White Hexagon
+[1]  PlayEffect White
+[1]  SetFontSize 45
+[1]  SetTextColor 84 18 42
+[1]  SetBackgroundColor 136 136 255 240
+[1]  SetBorderColor 255	255	255
+[1]
+[1]Show
+[1]  Class "Divination Card"
+[1]  BaseType "Bowyer's Dream" "Chaotic Disposition" "Left to Fate" "Perfection" "Saint's Treasure" "The Artist" "The Breach" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Formless Sea" "The Hale Heart" "The Hoarder" "The Hunger" "The Jeweller's Boon" "The Polymath" "The Risk" "The Thaumaturgist" "The Undisputed" "The Valley of Steel Boxes" "The Void" "The World Eater" "Time-Lost Relic"
+[1]  PlayAlertSound 6 300
+[1]  MinimapIcon 1 Red Circle
+[1]  PlayEffect Red
+[1]  SetFontSize 45
+[1]  SetTextColor 184 218 242
+[1]  SetBackgroundColor 70 70 255 130
+[1]  SetBorderColor 184 218 242
+[1]  
+[1]Hide
+[1]  Class "Divination Card"
+[1]  BaseType "The Carrion Crow" "Struck by Lightning" "The Metalsmith's Gift" "Her Mask" "Thunderous Skies" "Turn the Other Cheek" "The King's Blade" "Destined to Crumble" "Lantador's Lost Love" "The Lover" "The Endurance" "Prosperity" "Rain of Chaos" "Volatile Power" "The Sigil" "The Flora's Gift" "The Incantation" "A Mother's Parting Gift" "The Twins" "The Opulent" "The Surgeon" "Dark Temptation" "The Hermit" "The Web" "Cartographer's Delight" "The Lich" "The Witch" "The Inoculated"
+[1]
+[1]Show
+[1]  #"The Flora's Gift"
+[1]  Class "Divination Card"
+[1]  BaseType "Her Mask" "The Gambler"
+[1]  SetTextColor 170 158 130 200
+[1]  SetBackgroundColor 0 0 0 150
+[1]  SetBorderColor 170 158 130 150
+[1]  SetFontSize 45
+[1]
+[1]Show
+[1]  Class "Divination Card"
+[1]  MinimapIcon 2 Blue Circle
+[1]  PlayEffect Blue
+[1]  SetTextColor 170 230 230
+[1]  SetFontSize 45

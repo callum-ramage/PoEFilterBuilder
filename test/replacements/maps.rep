@@ -1,0 +1,189 @@
+##############################
+##  Shaped Maps  ##
+##############################
+Show
+  Class Maps
+  ShapedMap True
+  MapTier > 10
+  SetFontSize 45
+  SetBorderColor 102 0 102
+  SetTextColor 235 12 32
+  PlayAlertSound 2 300
+  MinimapIcon 1 Green Triangle
+  PlayEffect Red
+
+##############################
+##  Maps #16  ##
+##############################
+Show
+  Class Maps
+  MapTier 16
+  SetFontSize 45
+  SetBorderColor 102 0 102
+  SetTextColor 235 12 32
+  MinimapIcon 1 Red Triangle
+
+##############################
+##  Maps #15  ##
+##############################
+Show
+  Class Maps
+  MapTier 15
+  SetFontSize 45
+  SetBorderColor 235 12 32
+  SetTextColor 235 37 30
+  MinimapIcon 1 Red Triangle
+
+##############################
+##  Maps #14  ##
+##############################
+Show
+  Class Maps
+  MapTier 14
+  SetFontSize 45
+  SetBorderColor 235 12 32
+  SetTextColor 237 62 28
+  MinimapIcon 1 Red Triangle
+
+##############################
+##  Maps #13  ##
+##############################
+Show
+  Class Maps
+  MapTier 13
+  SetFontSize 45
+  SetBorderColor 235 12 32
+  SetTextColor 240 87 26
+  MinimapIcon 1 Red Triangle
+
+##############################
+##  Maps #12  ##
+##############################
+Show
+  Class Maps
+  MapTier 12
+  SetFontSize 45
+  SetBorderColor 235 12 32
+  SetTextColor 242 112 25
+  MinimapIcon 1 Red Triangle
+
+##############################
+##  Maps #11  ##
+##############################
+Show
+  Class Maps
+  MapTier 11
+  SetFontSize 45
+  SetBorderColor 235 12 32
+  SetTextColor 245 137 23
+  MinimapIcon 1 Red Triangle
+
+##############################
+##  Maps #10  ##
+##############################
+Show
+  Class Maps
+  MapTier 10
+  SetFontSize 45
+  SetBorderColor 252 212 18
+  SetTextColor 247 162 21
+  MinimapIcon 1 Yellow Triangle
+
+##############################
+##  Maps #9  ##
+##############################
+Show
+  Class Maps
+  MapTier 9
+  SetFontSize 45
+  SetBorderColor 252 212 18
+  SetTextColor 250 187 20
+  MinimapIcon 1 Yellow Triangle
+
+##############################
+##  Maps #8  ##
+##############################
+Show
+  Class Maps
+  MapTier 8
+  SetFontSize 45
+  SetBorderColor 252 212 18
+  SetTextColor 252 212 18
+  MinimapIcon 1 Yellow Triangle
+
+##############################
+##  Maps #7  ##
+##############################
+Show
+  Class Maps
+  MapTier 7
+  SetFontSize 45
+  SetBorderColor 252 212 18
+  SetTextColor 255 238 17
+  MinimapIcon 1 Yellow Triangle
+
+##############################
+##  Maps #6  ##
+##############################
+Show
+  Class Maps
+  MapTier 6
+  SetFontSize 45
+  SetBorderColor 252 212 18
+  SetTextColor 255 240 56
+  MinimapIcon 1 Yellow Triangle
+
+##############################
+##  Maps #5  ##
+##############################
+Show
+  Class Maps
+  MapTier 5
+  SetFontSize 45
+  SetBorderColor 255 255 255
+  SetTextColor 255 243 96
+  MinimapIcon 1 White Triangle
+
+##############################
+##  Maps #4  ##
+##############################
+Show
+  Class Maps
+  MapTier 4
+  SetFontSize 45
+  SetBorderColor 255 255 255
+  SetTextColor 255 246  136
+  MinimapIcon 1 White Triangle
+
+##############################
+##  Maps #3  ##
+##############################
+Show
+  Class Maps
+  MapTier 3
+  SetFontSize 45
+  SetBorderColor 255 255 255
+  SetTextColor 255 249 172
+  MinimapIcon 1 White Triangle
+
+##############################
+##  Maps #2  ##
+##############################
+Show
+  Class Maps
+  MapTier 2
+  SetFontSize 45
+  SetBorderColor 255 255 255
+  SetTextColor 255 252 215
+  MinimapIcon 1 White Triangle
+
+##############################
+##  Maps #1  ##
+##############################
+Show
+  Class Maps
+  MapTier 1
+  SetFontSize 45
+  SetBorderColor 255 255 255
+  SetTextColor 255 255 255
+  MinimapIcon 1 White Triangle

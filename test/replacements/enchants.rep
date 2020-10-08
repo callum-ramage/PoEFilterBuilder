@@ -1,0 +1,17 @@
+[1]#############################
+[1]##         Enchants         ##
+[1]##############################
+[1]
+[1]Show
+[1]  AnyEnchantment True
+[1]  Class Helmet
+[1]  SetBorderColor 22 247 108 255
+[1]  MinimapIcon 0 Green Diamond
+[1]  SetFontSize 45
+[1]
+[2]Hide
+[2]  AnyEnchantment True
+[2]  Class Boots Gloves
+[2]  SetBorderColor 22 247 108 255
+[2]  MinimapIcon 0 Green Diamond
+[2]  SetFontSize 45

@@ -1,0 +1,75 @@
+<script>
+    var filterFiles = {{.Files}};
+
+    document.addEventListener('DOMContentLoaded', function(event) {
+        var filterSelect = document.getElementById("filterSelect");
+        for (const file in filterFiles) {
+            if (filterFiles.hasOwnProperty(file)) {
+                addOption(file, filterFiles[file]);
+            }
+        }
+        filterSelect.selectedIndex = 0;
+        changeSelection(filterSelect);
+    });
+
+    function addOption(name, value) {
+        var sel = document.getElementById('filterSelect');
+        var opt = document.createElement('option');
+        opt.appendChild( document.createTextNode(name) );
+        opt.value = value;
+        sel.appendChild(opt); 
+    }
+
+    function changeSelection(e) {
+        var filterText = document.getElementById("filter-text");
+        filterText.value = e.value;
+        var filterEditor = document.getElementById("editor");
+        if (updateEditor != null) {
+            updateEditor(e.value);
+        }
+        var filterName = document.getElementById("filterName");
+        filterName.value = e[e.selectedIndex].label;
+    }
+</script>
+<script src="nav.js"></script>
+<link href="https://web.poecdn.com/css/screen.css?v=f32c935ef0bfab4fe51b901aaddb3100" media="screen" rel="stylesheet" type="text/css"> 
+<script type="text/javascript" src="https://web.poecdn.com/js/lib/require-2.3.2.js?v=53f6b5a112b20a13c435d7b4630b8320"></script>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="filter.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PoE Item Filter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="middle">
+            <div id="nav"></div>
+            <h2>Filters</h2>
+            <span>Format: {replace file name,option 1,...,option N}</span><br>
+            <span>{currency,5}</span><br>
+            <span>{talisman}</span><br><br>
+            <label for="filterSelect">Choose a filter file:</label>
+            <select name="filterSelect" id="filterSelect" onchange="changeSelection(this);"></select><br>
+            <!-- <textarea id="filterArea" name="filterArea" cols=50 rows=20 form="filterform"></textarea> -->
+            <div class="item-filter-view">
+                <div class="row">
+                    <div class="element filter-text-element">
+                        <div class="filter-text-wrapper ">
+                            <textarea id="filter-text" class="filter-text" name="filterArea" spellcheck="false" placeholder="empty" form="filterform"></textarea>
+                            <pre id="editor" class="filter-editor"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="/submitfilter" id="filterform">
+                Name: <input type="text" id="filterName" name="filename">
+                <input name="submit" type="submit" value="Delete">
+                <input name="submit" type="submit" value="Save">
+                <input name="submit" type="submit" value="Compile">
+            </form>
+        </div>
+    </body>
+</html>

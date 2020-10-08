@@ -1,0 +1,152 @@
+#{heist,}
+
+#{veiled,,#,#Cameria
+,#Riker
+,#Catarina
+,#Aisling
+,#Elreon
+,#Gravicius
+,#Guff
+,#Haku
+,#Hillock
+,#It That Fled
+,#Janus
+,#Korell
+,#Leo
+,#Rin
+,#Jorgin
+,#Tora
+,#Vagan
+,#Vorici
+,#Amulets
+,#Rings
+,#Belts
+,#One Hand Melee
+,#Two Hand Ranged
+,#Two Hand Melee
+,#One Hand Ranged
+,#Quivers
+,#Shields
+,#Gloves
+,#Boots
+,#Body Armours
+,#Helmets
+,#Flasks
+}
+
+#{gems,}
+
+#{leveling,#,}
+
+#{bases,}
+
+#{enchants,,}
+
+#{chance,#}
+
+#{jewels,}
+
+#{div-cards,}
+  
+#{currency,,#,#}
+
+Show
+  Class "Quest Items" 
+  SetFontSize 45
+
+Show
+  BaseType "Silver Key" "Treasure Key" "Golden Key" "Offering to the Goddess" "Stone of Passage" "Flashpowder Keg"
+  SetTextColor 74 230 58
+  SetBorderColor 74 230 58
+  MinimapIcon 1 Green Star
+  SetFontSize 42
+
+##############################
+##          Misc           ##
+##############################
+
+Show
+  BaseType Talisman
+  SetBorderColor 75 36 17
+  SetTextColor 0 0 0
+  MinimapIcon 0 Brown Diamond
+  SetBackgroundColor 200 200 200 200
+
+Show
+  LinkedSockets 6
+  SetTextColor 255 214 184
+  PlayAlertSound 1 300  
+  MinimapIcon 1 White Square
+  PlayEffect Brown
+
+Show
+  Sockets >= 6
+  SetTextColor 170 158 130
+  PlayAlertSound 1 300
+  MinimapIcon 1 Brown Square
+  PlayEffect Brown
+
+Show
+  Rarity Unique
+  PlayAlertSound 5 300
+  MinimapIcon 1 Yellow Square
+  PlayEffect Yellow
+
+Show
+  Class "Incubator"
+  SetTextColor 184 218 242
+  SetBackgroundColor 70 70 255 130
+  SetBorderColor 63 55 9 255
+  MinimapIcon 0 Yellow Hexagon
+  SetFontSize 45
+  
+Show
+  Corrupted True
+  CorruptedMods > 0
+  SetBorderColor 255 50 50
+  Rarity > Normal
+  SetFontSize 18
+  
+#{gems,}
+
+#{flasks,}
+
+#{maps}
+
+#{fragments,}
+
+####################
+##  Shrink Other  ##
+####################
+
+Show
+  Rarity Unique
+
+Hide
+  Rarity < Unique
+  ItemLevel > 68
+  Class Bows Staves Swords Maces Axes Claws Warstaves Quivers Wands "Body Armours"
+
+Show
+  Rarity Rare
+#  Class Rings Amulets
+  SetBorderColor 240 240 200 50
+  SetFontSize 36
+  SetBackgroundColor 255 255 255 0
+
+Show
+  Rarity Normal
+  ItemLevel < 30
+  SetFontSize 36
+  SetBackgroundColor 20 20 20 100
+
+Show
+  Rarity Magic
+  ItemLevel < 60
+  SetFontSize 22
+  SetBackgroundColor 20 20 20 100
+
+Hide
+  Rarity < Unique
+  SetFontSize 18
+  SetBackgroundColor 20 20 20 100

@@ -1,0 +1,51 @@
+[1]#############################
+[1]##       Veiled Gear        ##
+[1]##############################
+[1]
+[1]{veiledMember,[3],Cameria's}
+[1]{veiledMember,[4],Riker's}
+[1]{veiledMember,[5],Catarina's}
+[1]{veiledMember,[6],Aisling's}
+[1]{veiledMember,[7],Elreon's}
+[1]{veiledMember,[8],Gravicius'}
+[1]{veiledMember,[9],Guff's}
+[1]{veiledMember,[10],Haku's}
+[1]{veiledMember,[11],Hillock's}
+[1]{veiledMember,[12],It That Fled's}
+[1]{veiledMember,[13],Janus'}
+[1]{veiledMember,[14],Korell's}
+[1]{veiledMember,[15],Leo's}
+[1]{veiledMember,[16],Rin's}
+[1]{veiledMember,[17],Jorgin's}
+[1]{veiledMember,[18],Tora's}
+[1]{veiledMember,[19],Vagan's}
+[1]{veiledMember,[20],Vorici's}
+[1]
+[1]{veiledClass,[21],Amulets}
+[1]{veiledClass,[22],Rings}
+[1]{veiledClass,[23],Belts}
+[1]{veiledClass,[24],Claws" "Daggers" "Rune Daggers" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces}
+[1]{veiledClass,[25],Bows}
+[1]{veiledClass,[26],Staves" "Warstaves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces}
+[1]{veiledClass,[27],Wands}
+[1]{veiledClass,[28],Quivers} 
+[1]{veiledClass,[29],Shields} 
+[1]{veiledClass,[30],Gloves}
+[1]{veiledClass,[31],Boots}
+[1]{veiledClass,[32],Body Armours}
+[1]{veiledClass,[33],Helmets}
+[1]{veiledClass,[34],Flasks}
+[1]  
+[2]Show
+[2]  HasExplicitMod "Veil"
+[2]  Identified True
+[2]  SetBorderColor 241 16 16 255
+[2]  MinimapIcon 0 Red Diamond
+[2]  SetFontSize 45
+[1]
+Hide
+  HasExplicitMod "Veil"
+  Identified True
+  SetBorderColor 241 16 16 255
+  MinimapIcon 0 Red Diamond
+  SetFontSize 45

@@ -1,0 +1,41 @@
+[1]#############################
+[1]##           Gems           ##
+[1]##############################
+[1]
+[1]Show
+[1]  Class Gem
+[1]  Quality >= 10
+[1]  SetFontSize 36
+[1]  SetBorderColor 73 181 175
+[1]  SetBackgroundColor 27 66 64
+[1]  
+[1]Show
+[1]  Class Gem
+[1]  BaseType Enhance Empower Enlighten Portal Awakened
+[1]  MinimapIcon 0 White Diamond
+[1]  SetBorderColor 73 181 175
+[1]  SetBackgroundColor 27 66 64
+[1]
+[1]Show
+[1]  Class Gem
+[1]  GemLevel > 19
+[1]  SetFontSize 36
+[1]  SetBorderColor 73 181 175
+[1]  
+[1]Show
+[1]  Class Gem
+[1]  BaseType "Vaal"
+[1]  Corrupted True
+[1]  SetFontSize 36
+[1]  SetBorderColor 73 181 175
+[1]  
+[1]Show
+[1]  AreaLevel < 68
+[1]  Class "Active Skill Gems" "Support Skill Gems"
+[1]  SetFontSize 36
+[1]
+[1]Hide
+[1]  AreaLevel > 67
+[1]  Class "Active Skill Gems" "Support Skill Gems"
+[1]  SetFontSize 18
+[1]
