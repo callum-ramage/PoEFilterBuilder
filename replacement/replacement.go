@@ -81,7 +81,13 @@ func splitParameters(filterKey string) (string, []string) {
 
 func replaceParameters(filterContent string, replacementParams []string) string {
 	for i, val := range replacementParams {
-		filterContent = strings.Replace(filterContent, "["+strconv.Itoa(i+1)+"]", val, -1)
+		if val == "\\" {
+			re := regexp.MustCompile(`\[` + strconv.Itoa(i+1) + `\].*\n?`)
+			filterContent = re.ReplaceAllString(filterContent, "")
+			// filterContent = strings.Replace(filterContent, "["+strconv.Itoa(i+1)+"].*$", "", -1)
+		} else {
+			filterContent = strings.Replace(filterContent, "["+strconv.Itoa(i+1)+"]", val, -1)
+		}
 	}
 	return filterContent
 }
