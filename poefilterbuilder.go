@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"net"
 	"net/http"
 	"net/url"
 	"path"
@@ -298,16 +299,24 @@ func main() {
 	globalHandler := make(localHandler)
 	globalHandler["localhost"] = localMux
 
-	browser.OpenURL("http://localhost:3000/home")
-
 	var addr = 3000
 	for {
 		fmt.Printf("Trying %d\n", addr)
-		tempServerVar := &http.Server{Addr: ":" + strconv.Itoa(addr), Handler: globalHandler}
-		err = tempServerVar.ListenAndServe()
+		listener, err := net.Listen("tcp", ":"+strconv.Itoa(addr))
 		if err != nil {
-			fmt.Println(err)
 			addr++
+			continue
 		}
+
+		browser.OpenURL("http://localhost:" + strconv.Itoa(addr) + "/home")
+		if err := http.Serve(listener, globalHandler); err != nil {
+			fmt.Println(err)
+		}
+		// tempServerVar := &http.Server{Addr: ":" + strconv.Itoa(addr), Handler: globalHandler}
+		// err = tempServerVar.ListenAndServe()
+		// if err != nil {
+		// 	fmt.Println(err)
+		// 	addr++
+		// }
 	}
 }
