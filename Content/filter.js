@@ -6,7 +6,7 @@ require(['plugins'], function () {
             var textarea = $('.filter-text');
             var text = textarea.val();
             var showPlaceholder = text == '' && !$('.filter-text-wrapper').hasClass('show-error');
-            itemFilter.init('editor', false);
+            itemFilter.init('editor', false, {"blocks":["Show","Hide","Continue"],"conditions":["AlternateQuality","AnyEnchantment","AreaLevel","BaseType","BlightedMap","Class","Corrupted","CorruptedMods","DropLevel","ElderItem","ElderMap","EnchantmentPassiveNode","EnchantmentPassiveNum","FracturedItem","GemLevel","GemQualityType","HasEnchantment","HasExplicitMod","HasInfluence","Height","Identified","ItemLevel","LinkedSockets","MapTier","Mirrored","Prophecy","Quality","Rarity","Replica","ShapedMap","ShaperItem","SocketGroup","Sockets","StackSize","SynthesisedItem","Width"],"actions":["CustomAlertSound","DisableDropSound","EnableDropSound","MinimapIcon","PlayAlertSound","PlayAlertSoundPositional","PlayEffect","SetBackgroundColor","SetBorderColor","SetFontSize","SetTextColor"],"rarities":["Normal","Magic","Rare","Unique"],"gemQualityTypes":["Superior","Divergent","Anomalous","Phantasmal"],"colors":["Red","Green","Blue","Brown","White","Yellow","Cyan","Grey","Orange","Pink","Purple"],"shapes":["Circle","Diamond","Hexagon","Square","Star","Triangle","Cross","Moon","Raindrop","Kite","Pentagon","UpsideDownHouse"],"sockets":["R","G","B","A","D","W"],"influences":["Shaper","Elder","Crusader","Hunter","Redeemer","Warlord","None"],"operationTypes":["=","!","<=",">=","<",">","=="]});
             var editor = itemFilter.getEditor();
             editor.setValue(showPlaceholder ? textarea.attr('placeholder') : text, -1);
             $('.loading-filter').hide();
